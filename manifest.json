@@ -1,0 +1,7 @@
+{
+  "name": "quzhat",
+  "short_name": "q",
+  "icons": [],
+  "start_url": "/",
+  "display": "standalone"
+}
