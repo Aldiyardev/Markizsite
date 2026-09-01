@@ -1,69 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta https-equiv="X-UA-compatible" content="IF=edge" />
-    <link rel ="stylesheet" href="uselessshi.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-    <title>quzhat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050507">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="MARKIZ — персональная страница игрока Mobile Legends. Клипы, профиль и Telegram @Markizmlbb.">
+  <meta property="og:title" content="MARKIZ">
+  <meta property="og:description" content="Персональная страница MARKIZ. Клипы и связь в Telegram.">
+  <meta property="og:image" content="images/markiz.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>MARKIZ</title>
+  <link rel="canonical" href="./">
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" as="image" href="images/markiz.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="favicon (1).ico" class="logo">
-            <nav id="nav-menu">
-                <ul class="nav-bar">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Somethin2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Somethin3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Somethin4</a>
-                    </li>
-                </ul>
-            </nav>
-        
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </header>
-
-    <div class="HeroPage">
-        <h1>Y A U GAE</h1>
-        <text>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
-        when designers at Letraset and James Mosley, the librarian at St Bride Printing 
-        Library in London, took a 1914 Cicero translation and scrambled it to make dummy 
-        text for Letraset's Body Type sheets. It has survived not only many decades,
-        but also the leap into electronic typesetting, remaining essentially unchanged. 
-        It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus 
-        PageMaker and Microsoft Word including versions of Lorem Ipsum.
-        </text>
-        <a href="https://web.telegram.org/k/#@Markizmlbb">
-        <video  controls autoplay muted loop>
-            <source src="Amirtop.mp4" type="video/mp4">
-        </video>
-        </a>
+  <div class="noise" aria-hidden="true"></div>
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="top">
+    <div class="shell top__row">
+      <a class="brand" href="#top">
+        <img data-asset="logo" src="images/logo.png" alt="" width="40" height="40" decoding="async">
+        <span>MARKIZ</span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Навигация">
+        <ul>
+          <li><a href="#top">Главная</a></li>
+          <li><a href="#about">Профиль</a></li>
+          <li><a href="#clip">Клип</a></li>
+          <li><a class="pill" href="https://t.me/Markizmlbb" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-
-
-    <script src="appshi.js"></script>
-
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="shell hero__grid">
+        <div class="hero__copy reveal">
+          <p class="kicker"><i></i> LIVE SIGNAL · MLBB</p>
+          <h1>
+            <span class="glitch" data-text="MARKIZ">MARKIZ</span>
+            <span class="slogan">PLAY. WIN. REPEAT.</span>
+          </h1>
+          <p class="lead">Лучший игрок в игре Mobile Legends. Хочешь стать лучше? <b>Залетай</b> на мой телеграм канал!</p>
+          <div class="actions">
+            <a class="btn btn--cyan" href="#clip">Смотреть клип</a>
+            <a class="btn btn--ghost" href="https://t.me/Markizmlbb" target="_blank" rel="noopener noreferrer">@Markizmlbb</a>
+          </div>
+        </div>
+        <figure class="frame reveal">
+          <span class="frame__tag">ID · MARKIZ</span>
+          <img data-asset="art" src="images/markiz.jpg" width="1280" height="1280" alt="Арт MARKIZ: белые волосы и красные очки" fetchpriority="high" decoding="async">
+          <span class="frame__corner" aria-hidden="true"></span>
+        </figure>
+      </div>
+    </section>
+    <section class="block" id="about">
+      <div class="shell">
+        <header class="block__head reveal">
+          <p class="kicker"><i></i> Profile</p>
+          <h2>Кто это</h2>
+        </header>
+        <p class="prose reveal">Йоу чувак! Меня зовут Амир и я игрок Mobile Legends. У меня есть огромный опыт и успешные кейсы в игре Mobile Legends. Не стесняйся - обращайся! </p>
+        <ul class="stats">
+          <li class="reveal"><b>MLBB</b><span>основная игра</span></li>
+          <li class="reveal"><b>TG</b><span>@Markizmlbb</span></li>
+          <li class="reveal"><b>20</b><span>история матчей</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="block" id="clip">
+      <div class="shell">
+        <header class="block__head reveal">
+          <p class="kicker"><i></i> Media</p>
+          <h2>Клип</h2>
+        </header>
+        <figure class="player reveal">
+          <video id="clip-video" controls playsinline preload="metadata" poster="images/poster.jpg" width="1280" height="576">
+            <source data-asset="video" src="video/Amirtop.mp4" type="video/mp4">
+          </video>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer class="foot">
+    <div class="shell foot__row">
+      <p>© <span id="year">2026</span> MARKIZ</p>
+      <a href="#top">Наверх</a>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
 </body>
 </html>
-
