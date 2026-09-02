@@ -43,3 +43,14 @@
   });
   window.addEventListener("resize", () => { if (window.innerWidth > 860) setOpen(false); });
 })();
+
+const ctaBIR = document.getElementById("cta1");
+
+ctaBIR.addEventListener("click", function(event){ 
+  event.preventDefault();
+  const msg = "оуи оуи, нақұй иди";
+  const link = "https://t.me/Markizzmlbb?text=" + encodeURIComponent(msg);
+  window.open(link, "_blank");
+});
+
+
