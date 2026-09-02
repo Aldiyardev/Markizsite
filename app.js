@@ -48,9 +48,16 @@ const ctaBIR = document.getElementById("cta1");
 
 ctaBIR.addEventListener("click", function(event){ 
   event.preventDefault();
-  const msg = "оуи оуи, нақұй иди";
-  const link = "https://t.me/Markizzmlbb?text=" + encodeURIComponent(msg);
-  window.open(link, "_blank");
+  const msg1 = "Қалайсың гэй! Хочу забустить мой аккаунт";
+  const link1 = "https://t.me/Markizzmlbb?text=" + encodeURIComponent(msg1);
+  window.open(link1, "_blank");
 });
 
+const ctaEKI = document.getElementById("cta2");
 
+ctaEKI.addEventListener("click", function(event){ 
+  event.preventDefault();
+  const msg2 = "Қалайсың гэй! бірдене бірдене коучинг?";
+  const link2 = "https://t.me/Markizzmlbb?text=" + encodeURIComponent(msg2);
+  window.open(link2, "_blank");
+});
