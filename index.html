@@ -37,13 +37,18 @@
         <ul>
           <li><a href="#top">Главная</a></li>
           <li><a href="#about">Профиль</a></li>
-          <li><a href="#clip">Клип</a></li>
-          <li><a class="pill" href="https://t.me/Markizmlbb" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          <li><a href="#clip">Price List</a></li>
         </ul>
       </nav>
+
+      <a class="pill" href="https://t.me/Markizmlbb" target="_blank" rel="noopener noreferrer">Telegram</a>
+
       <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Меню">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+      
     </div>
   </header>
   <main id="main">
@@ -81,33 +86,44 @@
     </section>
     <section class="block" id="about">
       <div class="shell">
+        
         <header class="block__head reveal">
           <p class="kicker"><i></i> Profile</p>
           <h2>Обо мне</h2>
         </header>
+        
         <p class="prose reveal">Занимаюсь бустом аккаунтов, помогаю разобраться в мире земель рассвета обучая игре. Принимаю заказы на любых рангах и делюсь своим опытом. С нетерпением жду, пока ты сделаешь свой первый заказ! </p>
+        
         <ul class="stats">
-          <li class="reveal"><b>MLBB</b><span>что то?</span></li>
           <li class="reveal"><b>TELEGRAM</b><span>@Markizmlbb</span></li>
           <li class="reveal"><b>10</b><span>лет опыта</span></li>
+          <li class="reveal"><b>10</b><span>лет опыта</span></li>
         </ul>
+
+        <br> 
+        <video id="clip-video" autoplay loop controls playsinline preload="metadata" poster="images/poster.jpg" width="1280" height="576">
+          <source data-asset="video" src="video/Amirtop.mp4" type="video/mp4">
+        </video>
+
       </div>
+
     </section>
+
     <section class="block" id="clip">
       <div class="shell">
+
         <header class="block__head reveal">
           <p class="kicker"><i></i> Media</p>
           <!-- <h2>Клип?</h2> --> <!-- әзірше былай, сосын шешу керек -->
         </header>
-        <figure class="player reveal">
-          <video id="clip-video" autoplay loop controls playsinline preload="metadata" poster="images/poster.jpg" width="1280" height="576">
-            <source data-asset="video" src="video/Amirtop.mp4" type="video/mp4">
-          </video>
-        </figure>
-      </div>
 
-      <img  src="priceList.jpg" width="90%" height="640"  fetchpriority="high">
+        <figure class="Price List">
+          <img src="images/priceLIst.webp">
+        </figure>
+
+      </div>
     </section>
+      
     
   </main>
   <footer class="foot">

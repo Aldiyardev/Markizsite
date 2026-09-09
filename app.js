@@ -48,7 +48,7 @@ const ctaBIR = document.getElementById("cta1");
 
 ctaBIR.addEventListener("click", function(event){ 
   event.preventDefault();
-  const msg1 = "Қалайсың гэй! Хочу забустить мой аккаунт";
+  const msg1 = "Здарова! Хочу купить буст";
   const link1 = "https://t.me/Markizzmlbb?text=" + encodeURIComponent(msg1);
   window.open(link1, "_blank");
 });
@@ -57,7 +57,8 @@ const ctaEKI = document.getElementById("cta2");
 
 ctaEKI.addEventListener("click", function(event){ 
   event.preventDefault();
-  const msg2 = "Қалайсың гэй! бірдене бірдене коучинг?";
+  const msg2 = "Здарова! Хочу купить коучинг";
   const link2 = "https://t.me/Markizzmlbb?text=" + encodeURIComponent(msg2);
   window.open(link2, "_blank");
 });
+
