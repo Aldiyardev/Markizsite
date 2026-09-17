@@ -69,7 +69,13 @@ h1 { margin: 0; }
 .block__head h2 { margin: 0; font-family: var(--display); font-size: clamp(2.2rem, 6vw, 4.2rem); }
 .prose { max-width: 58ch; color: #c5ccd8; }
 .stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin: 28px 0 0; padding: 0; list-style: none; }
-.stats li { padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: linear-gradient(180deg, rgba(255,255,255,.03), transparent); }
+
+.stats li { 
+  padding: 18px; 
+  border: 1px solid var(--line); 
+  border-radius: 18px; 
+  background: linear-gradient(180deg, rgba(255,255,255,.03), transparent); 
+}
 .stats b { display: block; font-family: var(--display); font-size: 2rem; letter-spacing: .06em; }
 .stats span { color: var(--muted); }
 .player { margin: 0; overflow: hidden; border-radius: 20px; border: 1px solid var(--line); background: #000; }
@@ -176,7 +182,62 @@ h1 { margin: 0; }
   box-shadow: 0 0 28px rgba(60,240,224,.55);
 }
 
-@keyframes marquee { 
+
+.Karusel {
+margin: 100px auto;
+width: 90%;
+border: 5px solid;
+display: flex;
+overflow-x: auto;
+}
+
+.Karusel::-webkit-scrollbar{
+  display: none;
+}
+
+.card::before {
+  content: "\201C";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 4rem;
+  color: #ccc;
+}
+
+.card::after {
+  content: "\201D";
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 4rem;
+  color: #ccc;
+}
+
+.card {
+  height: auto;
+  position: relative;
+  padding: 1em;
+  flex: 0 0 16em;
+  background: var(--red);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  font-size: 2rem;
+  border-radius: .2em;
+  text-align: left;
+  align-content: center;
+}
+
+.Card_group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: Horizontal-scroll 15s infinite linear;
+  padding-right: 1em;
+
+
+}
+
+@keyframes Horizontal-scroll { 
+  from { translate: 0; }
   to { transform: translateX(-50%); } 
-  
 }
