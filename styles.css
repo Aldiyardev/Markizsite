@@ -188,6 +188,7 @@ margin: 100px auto;
 width: 90%;
 display: flex;  
 overflow-y: hidden;
+overflow-x: hidden;
 }
 
 .Karusel::-webkit-scrollbar{
@@ -196,7 +197,9 @@ overflow-y: hidden;
 
 .the-box-for2-cardgroups{
   display: flex;
-  animation: Horizontal-scroll 15s infinite linear;
+  align-items: center;
+  justify-content: center;
+  animation: Horizontal-scroll 30s infinite linear;
 }
 
 .card::before {
