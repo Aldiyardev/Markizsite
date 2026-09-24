@@ -200,6 +200,8 @@ overflow-x: hidden;
   align-items: center;
   justify-content: center;
   animation: Horizontal-scroll 30s infinite linear;
+  flex-wrap: nowrap;
+  width: max-content;
 }
 
 .card::before {
