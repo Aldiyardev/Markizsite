@@ -200,7 +200,6 @@ overflow-y: hidden;
   align-items: center;
   justify-content: center;
   animation: Horizontal-scroll 30s infinite linear;
-  gap: 2em;
 }
 
 .card::before {
@@ -242,7 +241,7 @@ overflow-y: hidden;
   align-items: flex-start;
   justify-content: center;
   gap: 3em;
-  padding-right: 1em;
+  padding-right: 6em;
 }
 
 @keyframes Horizontal-scroll { 
@@ -257,4 +256,12 @@ overflow-y: hidden;
   font-family: var(--display); 
   font-size: 2rem; 
   letter-spacing: .06em;
+}
+
+.prices{
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  width: min(1120px, calc(100% - 32px)); 
+  margin-inline: auto;
 }
