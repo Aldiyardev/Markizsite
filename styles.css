@@ -241,7 +241,7 @@ overflow-y: hidden;
   align-items: flex-start;
   justify-content: center;
   gap: 3em;
-  padding-right: 26em;
+  padding-right: 6em;
 }
 
 @keyframes Horizontal-scroll { 
