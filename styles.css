@@ -188,7 +188,7 @@ margin: 80px auto;
 width: 90%;
 display: flex;  
 overflow-y: hidden;
-/* overflow-x: hidden; */
+overflow-x: hidden;
 }
 
 .Karusel::-webkit-scrollbar{
@@ -241,7 +241,7 @@ overflow-y: hidden;
   align-items: flex-start;
   justify-content: center;
   gap: 3em;
-  padding-right: 26em;
+  padding-right: 3em; 
 }
 
 @keyframes Horizontal-scroll { 
