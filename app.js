@@ -62,3 +62,12 @@ ctaEKI.addEventListener("click", function(event){
   window.open(link2, "_blank");
 });
 
+const track = document.querySelector('.the-box-for2-cardgroups');
+const speed = 60; // px per second, raise = faster, lower = slower
+
+function setSpeed() {
+  track.style.animationDuration = (track.scrollWidth / 2 / speed) + 's';
+}
+
+setSpeed();
+window.addEventListener('resize', setSpeed);

@@ -232,7 +232,6 @@ overflow-x: hidden;
 }
 
 
-
 .card::after {
   content: "\201D";
   position: absolute;
