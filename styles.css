@@ -215,7 +215,6 @@ overflow-x: hidden;
   height: auto;
   position: relative;
   color: var(--text);
-  
   padding: 30px;
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -225,6 +224,7 @@ overflow-x: hidden;
   font-size: 2rem;
   text-align: left;
   align-content: center;
+  padding-right: 6px;
 }
 
 .card::after {
