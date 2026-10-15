@@ -61,3 +61,4 @@ ctaEKI.addEventListener("click", function(event){
   const link2 = "https://t.me/Markizzmlbb?text=" + encodeURIComponent(msg2);
   window.open(link2, "_blank");
 });
+
