@@ -222,8 +222,15 @@ overflow-x: hidden;
   box-shadow: 0 1px 2px rgba(0,0,0,0.08);
   text-align: left;
   align-content: center;
-  padding-right: 6px;
+
+  box-sizing: border-box;
+  flex: 0 0 clamp(260px, 80vw, 420px);
+  font-size: clamp(1.1rem, 4.5vw, 2rem);
+  padding: clamp(16px, 4vw, 30px);
+  overflow-wrap: anywhere;
+  min-width: 0;
 }
+
 
 
 .card::after {
@@ -235,12 +242,12 @@ overflow-x: hidden;
   color: var(--cyan);
 }
 
-.Card_group{
+.Card_group {
   display: flex;
+  flex-shrink: 0;
   align-items: flex-start;
-  justify-content: center;
-  gap: 3em;
-  padding-right: 3em; 
+  gap: 3rem;
+  padding-right: 3rem;
 }
 
 @keyframes Horizontal-scroll { 
