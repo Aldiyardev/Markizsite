@@ -188,7 +188,7 @@ margin: 80px auto;
 width: 90%;
 display: flex;  
 overflow-y: hidden;
-overflow-x: hidden;
+/* overflow-x: hidden; */
 }
 
 .Karusel::-webkit-scrollbar{
@@ -227,7 +227,7 @@ overflow-x: hidden;
   flex: 0 0 clamp(260px, 80vw, 420px);
   font-size: clamp(1.1rem, 4.5vw, 2rem);
   padding: clamp(16px, 4vw, 30px);
-  overflow-wrap: anywhere;
+  overflow-wrap: anywhere;  
   min-width: 0;
 }
 
@@ -248,6 +248,8 @@ overflow-x: hidden;
   gap: 3rem;
   padding-right: 3rem;
 }
+
+.Card_group:nth-child(2) { outline: 3px solid red; }
 
 @keyframes Horizontal-scroll { 
   from { transform: translateX(0); }
