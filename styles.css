@@ -197,9 +197,10 @@ overflow-x: hidden;
 
 .the-box-for2-cardgroups{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: max-content;
+  flex-shrink: 0;
   animation: Horizontal-scroll 30s infinite linear;
+  will-change: transform;
 }
 
 .card::before {
@@ -215,17 +216,20 @@ overflow-x: hidden;
   height: auto;
   position: relative;
   color: var(--text);
-  padding: 30px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: linear-gradient(180deg, rgba(255,255,255,.03), transparent);
-  flex: 0 0 min(18em, 80vw);
   box-shadow: 0 1px 2px rgba(0,0,0,0.08);
-  font-size: 2rem;
   text-align: left;
   align-content: center;
-  padding-right: 6px;
+  box-sizing: border-box;
+  flex: 0 0 clamp(260px, 80vw, 420px);
+  font-size: clamp(1.1rem, 4.5vw, 2rem);
+  padding: clamp(16px, 4vw, 30px);
+  overflow-wrap: anywhere;
+  min-width: 0;
 }
+
 
 .card::after {
   content: "\201D";
@@ -238,10 +242,9 @@ overflow-x: hidden;
 
 .Card_group{
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 3em;
-  padding-right: 3em; 
+  flex-shrink: 0;
+  gap: 3rem;
+  padding-right: 3rem;
 }
 
 @keyframes Horizontal-scroll { 
@@ -251,10 +254,10 @@ overflow-x: hidden;
 
 .service-tag{
   text-transform: uppercase; 
-   
+  overflow-wrap: anywhere;
   font-weight: 800;
   font-family: var(--display); 
-  font-size: 2rem; 
+  font-size: clamp(1.2rem, 5vw, 2rem);  
   letter-spacing: .06em;
 }
 
