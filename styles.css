@@ -198,7 +198,7 @@ overflow-y: hidden;
 .the-box-for2-cardgroups{
   display: flex;
   width: max-content;
-  flex-shrink: 0;
+
   animation: Horizontal-scroll 30s infinite linear;
 }
 
@@ -270,5 +270,3 @@ overflow-y: hidden;
   margin-inline: auto;
 }
 
-.card { outline: 2px solid lime; }
-.the-box-for2-cardgroups { outline: 2px solid yellow; }
