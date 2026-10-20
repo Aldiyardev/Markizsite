@@ -198,7 +198,7 @@ overflow-x: hidden;
 .the-box-for2-cardgroups{
   display: flex;
   width: max-content;
-  animation: Horizontal-scroll 20s infinite linear;
+  animation: Horizontal-scroll 15s infinite linear;
 }
 
 .card::before {
